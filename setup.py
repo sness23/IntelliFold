@@ -22,7 +22,7 @@ setup(
         "modelcif==1.4",
         "networkx==3.6.1",
         "numba==0.65.1",
-        "numpy==1.26.4",
+        "numpy==2.4.1",
         "pandas==2.3.1",
         "PyYAML==6.0.2",
         "rdkit==2025.09.6",

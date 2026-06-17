@@ -45,6 +45,14 @@ def init_logging():
         filemode="w",
     )
     
+def _np_json_default(o):
+    if isinstance(o, np.generic):
+        return o.item()
+    if isinstance(o, np.ndarray):
+        return o.tolist()
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+
+
 def predict_and_save(
     args,
     model,
@@ -137,14 +145,14 @@ def predict_and_save(
         outname = f"{record.id}_seed-{seed}_sample-{i}_summary_confidences.json"
         output_path = struct_dir / outname
         with output_path.open("w") as f:
-            json.dump(summary_confidences, f, indent=1)
+            json.dump(summary_confidences, f, indent=1, default=_np_json_default)
             
         # Save the full confidences
         full_confidences = full_confidences_list[i]
         outname = f"{record.id}_seed-{seed}_sample-{i}_confidences.json"
         output_path = struct_dir / outname
         with output_path.open("w") as f:
-            json.dump(full_confidences, f, indent=1)
+            json.dump(full_confidences, f, indent=1, default=_np_json_default)
     
     return struct_dir
 
