@@ -28,7 +28,7 @@ setup(
         "rdkit==2024.3.2",
         "requests==2.32.3",
         "scipy==1.14.1",
-        "torch==2.6.0",
+        "torch==2.7.1",
         "torchdiffeq==0.2.5",
         "tqdm==4.67.1",
     ],
