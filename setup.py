@@ -25,7 +25,7 @@ setup(
         "numpy==1.26.4",
         "pandas==2.3.1",
         "PyYAML==6.0.2",
-        "rdkit==2025.9.3",
+        "rdkit==2025.09.6",
         "requests==2.34.2",
         "scipy==1.17.1",
         "torch==2.7.1",
