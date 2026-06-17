@@ -13,25 +13,25 @@ dependencies:
   - kalign2
   - pip
   - pip:
-      - rdkit==2024.3.2
+      - rdkit==2025.9.3
       - torch==2.7.1
-      - accelerate==1.1.1
-      - deepspeed==0.16.4
+      - accelerate==1.14.0
+      - deepspeed==0.17.5
       - biopython==1.85
-      - numpy==1.24.0
-      - pandas==2.2.3
-      - scipy==1.14.1
-      - networkx==3.4.2
-      - numba==0.61.0
-      - einops==0.8.0
-      - einx==0.3.0
-      - ml-collections==1.0.0
+      - numpy==1.26.4
+      - pandas==2.3.1
+      - scipy==1.17.1
+      - networkx==3.6.1
+      - numba==0.65.1
+      - einops==0.8.2
+      - einx==0.4.3
+      - ml-collections==1.1.0
       - torchdiffeq==0.2.5
-      - mashumaro==3.14
+      - mashumaro==3.22
       - pyyaml==6.0.2
       - tqdm==4.67.1
-      - click==8.1.8
-      - ihm==2.5
-      - modelcif==1.2
+      - click==8.4.1
+      - ihm==2.11
+      - modelcif==1.4
       - fsspec==2025.3.0
       - -i https://pypi.tuna.tsinghua.edu.cn/simple
