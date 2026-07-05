@@ -8,3 +8,6 @@ dist
 *.ninja*
 *.pickle
 logs/
+cache_data/
+intellifold.egg-info/
+
